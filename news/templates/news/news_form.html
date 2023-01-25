@@ -1,0 +1,7 @@
+<h1>News form</h1>
+<a href="{% url 'news' %}">Go back</a>
+<form method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Create">
+</form>

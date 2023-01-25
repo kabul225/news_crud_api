@@ -1,0 +1,6 @@
+<a href="{% url 'news' %}">Go back</a>
+<form method="post">
+    {% csrf_token %}
+    <p>Are you sure to delete this news? {{news_delete.title}}</p>
+    <input type="submit" value="Confirm">
+</form>
